@@ -1,51 +1,45 @@
-# use glob syntax.
-syntax: glob
-*.ser
-*.class
-*~
-*.bak
-#*.off
-*.old
-spark-warehouse
+# bloop and metals
+.bloop
+.bsp
 
-# eclipse conf file
-.settings
+# metals
+project/metals.sbt
+.metals
+
+# vs code
+.vscode
+
+# scala 3
+.tasty
+
+# sbt
+project/project/
+project/target/
+target/
+
+# eclipse
+build/
 .classpath
 .project
-.manager
-.scala_dependencies
+.settings
+.worksheet
+bin/
+.cache
 
-# idea
-.idea
+# intellij idea
+*.log
 *.iml
+*.ipr
+*.iws
+.idea
 
-# building
-target
-build
-null
-tmp*
-temp*
-dist
-test-output
-build.log
-
-# other scm
-.svn
-.CVS
-.hg*
-
-# switch to regexp syntax.
-#  syntax: regexp
-#  ^\.pc/
-
-# output not in target directory
-build.log
-derby.log
-
-#files
-src/main/scala/com/prozis/data/teste.scala
-
-src/main/scala/com/prozis/data/.DS_Store
+# mac
 .DS_Store
-spark-warehouse
-metastore_db
+
+# other?
+.history
+.scala_dependencies
+.cache-main
+
+#general
+*.class
